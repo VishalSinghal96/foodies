@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <link rel="icon" type="favicon" href="favicon.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Foodies</title>
+</head>
+
+<body>
+    <style>
+        @media only screen and (max-width: 1200px) {
+            .about1 {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+
+            .img1 {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+        }
+
+
+        .nav-item {
+
+            width: 100px;
+            height: 40px;
+
+        }
+
+        .carousel {
+            background-color: darkgray;
+
+        }
+
+
+        .food1 {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            margin-top: 4rem;
+        }
+
+        .card1 {
+            border-radius: 25px;
+            border: 1px solid #40c65d;
+            padding: 20px;
+            box-shadow: -1px 0px 20px black;
+            transition: 0.7s;
+        }
+
+        .card1:hover {
+            transform: scale(1.05);
+        }
+
+        .card2 {
+            border-radius: 25px;
+            border: 1px solid #40c65d;
+            padding: 20px;
+            box-shadow: -1px 0px 20px black;
+            transition: 1s;
+        }
+
+        .card2:hover {
+            transform: scale(1.05);
+        }
+
+        .card3 {
+            border-radius: 25px;
+            border: 1px solid #40c65d;
+            padding: 20px;
+            box-shadow: -1px 0px 20px black;
+            transition: 0.7s;
+        }
+
+        .card3:hover {
+            transform: scale(1.05);
+        }
+
+
+        .food2 {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            margin-top: 4rem;
+            margin-bottom: 4rem;
+        }
+
+        .card4 {
+            border-radius: 25px;
+            border: 1px solid #40c65d;
+            padding: 20px;
+            box-shadow: -1px 0px 20px black;
+            transition: 0.7s;
+        }
+
+        .card4:hover {
+            transform: scale(1.05);
+        }
+
+        .card5 {
+            border-radius: 25px;
+            border: 1px solid #40c65d;
+            padding: 20px;
+            box-shadow: -1px 0px 20px black;
+            transition: 0.7s;
+        }
+
+        .card5:hover {
+            transform: scale(1.05);
+        }
+
+        .card6 {
+            border-radius: 25px;
+            border: 1px solid #40c65d;
+            padding: 20px;
+            box-shadow: -1px 0px 20px black;
+            transition: 0.7s;
+        }
+
+        .card6:hover {
+            transform: scale(1.05);
+        }
+
+        .about1 {
+            display: flex;
+            flex-direction: row;
+            margin-top: 50px;
+
+        }
+
+        .ap1 {
+            margin-top: 110px;
+            margin-left: 50px;
+            margin-right: 70px;
+
+        }
+
+        .img1 {
+            padding: 50px;
+            border-radius: 12px;
+
+        }
+
+        .about2 {
+            display: flex;
+            flex-direction: row;
+            margin-top: 50px;
+
+        }
+
+        .ap2 {
+            margin-top: 110px;
+            margin-left: 70px;
+            margin-right: 30px;
+
+        }
+
+        .img2 {
+            padding: 50px;
+        }
+
+        .whole {
+            background-color: lightgrey;
+        }
+    </style>
+    <div class="whole">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="foodies-white nav.png" height="60px" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link  active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#food">Foods</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+
+        <!-- Carousel -->
+        <div class="carousel" id="home">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="burger car1.jpg" height="600px" class="d-block w-70 ms-auto me-auto" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Burger</h5>
+                            <p>Enjoy your everytime meal</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="pizza car2.jpg" height="600px" class="d-block w-70 ms-auto me-auto" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Pizza</h5>
+                            <p>Enjoy your favorite meal</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="cake car3.jpg" height="600px" class="d-block w-75 ms-auto me-auto" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Cake</h5>
+                            <p>Enjoy your memorial time with your family</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+
+        <!--about us -->
+        <div class="about" id="about"></div>
+        <div class="about1">
+            <div class="img1"> <img src="about1.png" height="500px" alt=""></div>
+            <div class="ap1">
+                <h3>We Pride Ourselves On Making Real Food From The Best Ingrediant</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati consectetur omnis, laudantium a
+                    quo enim magni dolor rem voluptatem ipsa eligendi voluptatibus. Fugit labore error quae, amet
+                    assumenda ipsam minima necessitatibus, provident pariatur inventore earum, vero dolorum repellendus.
+                    Sed illum eligendi debitis vitae est magnam doloribus earum, et sapiente a tenetur cum aut officia
+                    corrupti rerum cumque nesciunt in cupiditate. Harum laborum ullam nostrum recusandae quibusdam. Odit
+                    itaque eligendi nihil! Repellendus aliquid laborum obcaecati eius nihil expedita a tenetur
+                    consequatur dignissimos quae iure, dolorem harum ipsa quisquam. In, velit, perspiciatis quia
+                    voluptatem magni nisi exercitationem deserunt ipsum mollitia distinctio doloremque?</p>
+
+            </div>
+
+        </div>
+        <!-- about us 2 -->
+        <div class="about2">
+            <div class="ap2">
+                <h3>We make Everyting By Hand with the Best Possible Ingrediant</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolorem doloremque maiores
+                    quidem placeat, tempora nihil blanditiis sed. Aspernatur, quas. Non praesentium, eius cupiditate
+                    magni at itaque repellat quos fugiat impedit alias adipisci officia eveniet nihil reiciendis labore.
+                    Temporibus laboriosam aperiam voluptates ipsam nesciunt cupiditate ab dolorem alias sapiente,
+                    exercitationem beatae veniam, nulla earum harum sequi molestiae. Ipsum sint architecto quidem nobis
+                    ullam, inventore laborum aliquid quam reprehenderit totam quisquam, beatae ea ex. Repellendus alias
+                    error sint nostrum cumque laborum sequi autem molestiae ipsam, numquam animi, minus odit nobis
+                    doloremque quos vitae veritatis iure hic ipsum perferendis praesentium eligendi aut.</p>
+
+            </div>
+            <div class="img2"> <img src="about2.png" height="500px" alt=""></div>
+
+
+        </div>
+    </div>
+
+
+    <!-- food section1 -->
+    <div class="food" id="food">
+        <div class="food1">
+
+            <div class="card1" style="width: 21rem;">
+                <img src="food1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Burgers</h5>
+                    <p class="card-text">we have both types of Burgers Veg and Non-Veg.We provide many types in both
+                        types</p>
+                    <a href="#" class="btn btn-primary">Order Now</a>
+
+                </div>
+            </div>
+            <div class="card2" style="width: 23em;">
+                <img src="food2.jpg" height="250px" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Sandwichs</h5>
+                    <p class="card-text">If you want crispy and cruncy sandwiches then order now</p>
+                    <a href="#" class="btn btn-primary">Order Now</a>
+                </div>
+            </div>
+            <div class="card3" style="width: 23rem;">
+                <img src="food3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Momos</h5>
+                    <p class="card-text">There are available all types of momos And some combos</p>
+                    <a href="#" class="btn btn-primary">Order Now</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- food section2 -->
+        <div class="food2">
+
+            <div class="card3" style="width: 21rem;">
+                <img src="food4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Pizza</h5>
+                    <p class="card-text">\we have many types of pizzas.Order your favorite topping
+                        pizza</p>
+                    <a href="#" class="btn btn-primary">Order Now</a>
+
+                </div>
+            </div>
+            <div class="card5" style="width: 23em;">
+                <img src="cake.jpg" height="250px" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Cakes</h5>
+                    <p class="card-text">We make your favorite cake. we provide you fully egeless cakes and pastries</p>
+                    <a href="#" class="btn btn-primary">Order Now</a>
+                </div>
+            </div>
+            <div class="card6" style="width: 23rem;">
+                <img src="food6.jpg" height="250px" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Beverages</h5>
+                    <p class="card-text">All type Beverages are available. like soft-drinkss,moktails,soda-water and
+                        etc</p>
+                    <a href="#" class="btn btn-primary">Order Now</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <!-- contact -->
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white" id="contact">
+        <!-- Grid container -->
+        <div class="container p-4">
+
+            <section class="">
+                <form action="">
+                    <!--Grid row-->
+                    <div class="row d-flex justify-content-center">
+                        <!--Grid column-->
+                        <div class="col-auto">
+                            <p class="pt-2">
+
+                            </p>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-md-5 col-12">
+                            <!-- Email input -->
+                            <div class="form-outline form-white mb-4">
+                                <input type="email" id="form5Example21" class="form-control" />
+                                <label class="form-label" for="form5Example21"></label>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-auto">
+                            <!-- Submit button -->
+                            <button type="submit" class="btn btn-outline-light mb-4">
+                                Send
+                            </button>
+                        </div>
+                        <!--Grid column-->
+                    </div>
+                    <!--Grid row-->
+                </form>
+            </section>
+            <!-- Section: Form -->
+
+            <!-- Section: Text -->
+            <section class="mb-4">
+                <p>
+                    If you want to contact with us then send mail.
+                </p>
+                <p>Also if you have an query then contact us and give feedback there.</p>
+            </section>
+            <!-- Section: Text -->
+
+            <!-- Section: Links -->
+            <section class="">
+                <!--Grid row-->
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">FacebookS</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="text-white">Link</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Instagram</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="text-white">Link</a>
+
+                        </ul>
+                    </div>
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Linkedin</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="text-white">Link </a>
+
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Mobile No.</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="text-white">Link </a>
+
+                        </ul>
+                    </div>
+                </div>
+                <!--Grid row-->
+            </section>
+            <!-- Section: Links -->
+        </div>
+        <!-- Grid container -->
+
+
+    </footer>
+    </div>
+    <!-- Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
